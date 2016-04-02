@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite1" verbose="1" parallel="tests">
+	<listeners>
+		<listener class-name="services.IReporterServiceFinal"></listener>
+	</listeners>
+	<test name="Regression1">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="tests.ITestListenerDemoEx" />
+		</classes>
+	</test> 
+	<test name="Regression2">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="tests.ITestListenerDemoEx" />
+		</classes>
+	</test>
+	
+</suite>

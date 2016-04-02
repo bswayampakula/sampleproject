@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="services.IReporterServiceFinal"/>
+  </listeners>
+  <test name="Regression1(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.ITestListenerDemoEx">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+          <include name="launchApplication"/>
+          <include name="testFive"/>
+          <include name="testThree"/>
+          <include name="createDriver"/>
+          <include name="createDriver"/>
+        </methods>
+      </class> <!-- tests.ITestListenerDemoEx -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+  <test name="Regression2(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.ITestListenerDemoEx">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+          <include name="launchApplication"/>
+          <include name="testFive"/>
+          <include name="testThree"/>
+          <include name="createDriver"/>
+          <include name="createDriver"/>
+        </methods>
+      </class> <!-- tests.ITestListenerDemoEx -->
+    </classes>
+  </test> <!-- Regression2(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
